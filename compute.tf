@@ -156,7 +156,7 @@ resource "google_compute_autoscaler" "cr460-autoscaler" {
   autoscaling_policy {
     max_replicas    = 6
     min_replicas    = 1
-    cooldown_period = 180
+    cooldown_period = 60
 
     cpu_utilization {
       target = 0.77
